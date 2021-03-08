@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FileShare</title>
+  </head>
+  <body>
+    <input id="file"/><button onclick="open()">Download</button>
+    <script>
+      function open(){
+        document.body.innerHTML += "<a href="+document.getElementById("file").value+" download>Download file</a>";
+      }
+    </script>
+    
+  </body>
+</html>

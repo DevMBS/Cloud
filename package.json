@@ -1,0 +1,26 @@
+{
+  "name": "devmbs-filetransfer",
+  "version": "0.0.1",
+  "description": "My FileTransfer.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/DevMBS/devmbs-filetransfer.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "multer",
+    "filetransfer",
+    "express"
+  ]
+}
