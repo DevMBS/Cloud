@@ -1,19 +1,31 @@
 const express = require("express");
 const multer  = require("multer");
-  
 const app = express();
+const fs = require('fs')
+const storageConfig = multer.diskStorage({
+    destination: (req, file, cb) =>{
+        cb(null, "uploads/.uploads");
+    },
+    filename: (req, file, cb) =>{
+        cb(null, file.originalname);
+    }
+});
  
-const upload = multer({dest:"http://webgame.hostronavt.ru/uploads"});
 app.use(express.static(__dirname));
  
-app.post("/upload", upload.single("filedata"), function (req, res, next) {
+app.use(multer({storage:storageConfig}).single("filedata"));
+app.post("/upload", function (req, res, next) {
    
     let filedata = req.file;
- 
-    console.log(filedata);
+    fs.appendFile('uploads/files.filedata', String(filedata.filename)+" ", (err) => {
+    if (err) {
+      console.error(err)
+      return
+    }
+    })
     if(!filedata)
-        res.send("Failed to upload file");
+        res.send("Failed to upload file<script>location.href='https://files.magicbluesmoke.repl.co/uploads';</script>");
     else
-        res.send("File uploaded. If you want to download it enter '"+filedata.filename+"' ");
+        res.send("File uploaded<script>location.href='https://files.magicbluesmoke.repl.co/uploads';</script>");
 });
-app.listen(3000);
+app.listen(3000, ()=>{console.log("Server started");});
