@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FileShare</title>
-  </head>
-  <body>
-    <input id="file"/><button onclick="open()">Download</button>
-    <script>
-      function open(){
-        document.body.innerHTML += "<a href="+document.getElementById("file").value+" download>Download file</a>";
-      }
-    </script>
-    
-  </body>
+    <title>Magic Cloud</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet"/>
+<script src="index.js"></script>
+</head>
+<body>
+  <div id="passinput">
+  Enter a password: <input id="password" type="password" /><button onclick="checkUser();" id="chkusr" >Ok</button><br/><br/>
+  </div>
+  <div id="uploads"></div>
+</body>
 </html>

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: phantasm; 
+  src: url(../p.ttf); 
+}
+body{
+  background-color: black;
+  color:aqua;
+  font-family: phantasm;
+}
+#btnGetTxt{
+  border-style:solid;
+  border-color:aqua;
+  background-color:black;
+  color:aqua;
+  cursor:pointer;
+  padding: 30px 20px; line-height: 50px;
+  width:40%;
+  font-family: phantasm;
+  margin-top:10%;
+  margin-left:30%;
+}
+div{
+  margin-top:10%;
+}
+a{
+  text-decoration: none;
+  border-style:solid;
+  border-radius:5px;
+  border-color:blue;
+  padding: 20px 10px; line-height: 30px;
+}
+#password{
+  border-style:solid;
+  border-color:aqua;
+  background-color:black;
+  color:aqua;
+  border-radius:5px;
+  padding: 20px 10px; line-height: 30px;
+  width:20%;
+  font-family: phantasm;
+}
+#chkusr{
+  border-style:solid;
+  border-color:aqua;
+  background-color:black;
+  color:aqua;
+  border-radius:5px;
+  cursor: pointer;
+  padding: 20px 10px; line-height: 30px;
+  width:20%;
+  font-family: phantasm;
+}
