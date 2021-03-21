@@ -1,4 +1,5 @@
 var pFAR = "";
+//displaying the list of uploaded files
 function getFiles(){
   document.getElementById("btnGetTxt").style.display = "none";
   $.ajax({
@@ -16,6 +17,7 @@ function getFiles(){
     }
   });
 }
+//checking password
 function checkUser(){
   $.ajax({
     url:'peofjpienrofiu34785y389470r9123-8jfun4un0u8h349fh098hq0uj0iweufn0ui0F7Q04UFJ0EJ-F9H0.sspfmbsc',
