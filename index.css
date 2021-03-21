@@ -1,0 +1,70 @@
+@font-face {
+  font-family: phantasm; 
+  src: url(p.ttf); 
+}
+#uf{
+  font-family: phantasm;
+}
+body{
+  background-color: black;
+  color:aqua;
+  font-family: phantasm;
+}
+#file{
+  border-style:solid;
+  border-color:aqua;
+  background-color:black;
+  color:aqua;
+  cursor:pointer;
+  padding: 30px 20px; line-height: 50px;
+  width:40%;
+  font-family: phantasm;
+  margin-bottom:-15%;
+}
+.s{
+  margin-left:30%;
+  margin-top:15%;
+  border-style:solid;
+  border-color:aqua;
+  background-color:black;
+  color:aqua;
+  cursor:pointer;
+  padding: 30px 20px; line-height: 50px;
+  width:40%;
+  font-family: phantasm;
+  margin-bottom:-15%;
+}
+.up{
+  margin-left:21.5%;
+  margin-top:15%;
+  border-style:solid;
+  border-color:aqua;
+  background-color:black;
+  color:aqua;
+  cursor:pointer;
+  padding: 20px 10px; line-height: 30px;
+  width:60%;
+  font-family: phantasm;
+  margin-bottom:-15%;
+}
+#password{
+  border-style:solid;
+  border-color:aqua;
+  background-color:black;
+  color:aqua;
+  border-radius:5px;
+  padding: 20px 10px; line-height: 30px;
+  width:20%;
+  font-family: phantasm;
+}
+#chkusr{
+  border-style:solid;
+  border-color:aqua;
+  background-color:black;
+  color:aqua;
+  border-radius:5px;
+  cursor: pointer;
+  padding: 20px 10px; line-height: 30px;
+  width:20%;
+  font-family: phantasm;
+}

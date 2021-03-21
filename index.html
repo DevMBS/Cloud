@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Node.js</title>
+    <title>Magic Cloud</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css"/>
+    <script src="i.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Upload file</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label>File</label><br>
-        <input type="file" name="filedata" /><br><br>
-        <input type="submit" value="Send" />
-      </form>
+  <div id="passinput">
+  Enter a password: <input id="password" type="password" /><button onclick="checkUser();" id="chkusr" >Ok</button>
+  </div>
+  <div id="ok">
+  </div>
 </body>
 </html>
