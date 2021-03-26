@@ -21,6 +21,9 @@ body{
   font-family: phantasm;
   margin-bottom:-15%;
 }
+#file:hover{
+  transform: scale(0.98);
+}
 .s{
   margin-left:30%;
   margin-top:15%;
@@ -34,6 +37,9 @@ body{
   font-family: phantasm;
   margin-bottom:-15%;
 }
+.s:hover{
+  transform: scale(0.98);
+}
 .up{
   margin-left:21.5%;
   margin-top:15%;
@@ -46,6 +52,9 @@ body{
   width:60%;
   font-family: phantasm;
   margin-bottom:-15%;
+}
+.up:hover{
+  transform: scale(0.98);
 }
 #password{
   border-style:solid;
@@ -67,4 +76,7 @@ body{
   padding: 20px 10px; line-height: 30px;
   width:20%;
   font-family: phantasm;
+}
+#chkusr:hover{
+  transform: scale(0.98);
 }
