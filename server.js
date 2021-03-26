@@ -35,6 +35,20 @@ app.post('/delete', function(req, res) {
       }
       else{
         res.send("<script>location.href='..//uploads';</script>");
+        fs.readFile("uploads/files.filedata", "utf8", function(error,data){ 
+          const datafile = data.split(" ");
+          let newDatafile = [];
+          for(i = 0; i < datafile.length-1; i++){
+            if(datafile[i] == (ffd)){
+              newDatafile.push("");
+            }
+            else{
+              newDatafile.push(datafile[i]+" ");
+            }
+          }	
+          fs.unlinkSync("uploads/files.filedata");
+          fs.appendFile('uploads/files.filedata', String(newDatafile.join("")), (err) => {});
+        });
       }
     });
  });
