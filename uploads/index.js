@@ -19,7 +19,7 @@ function getFiles(){
 }
 function innerMenu(list){
 
-  document.getElementById('span'+list).innerHTML = "<a href='.uploads/"+list+"' download>DOWNLOAD FILE</a><form action='/delete' method='post' enctype='multipart/form-data'><input type='text' name='delete' id='file' value='"+list+"' style='display:none;'/><input type='submit' value='DELETE FILE' /></form>";
+  document.getElementById('span'+list).innerHTML = "<a href='.uploads/"+list+"' download class='a'>DOWNLOAD FILE</a><form action='/delete' method='post' enctype='multipart/form-data'><input type='text' name='delete' id='file' value='"+list+"' style='display:none;'/><input type='submit' value='DELETE FILE' class='df'/></form><div class='cl-btn-7' onclick='document.getElementById(`span"+list+"`).innerHTML = ``;'></div>";
 
 
 }
