@@ -26,8 +26,37 @@ a{
   text-decoration: none;
   border-style:solid;
   border-radius:5px;
+  border-color:rgb(109, 109, 109);
+  padding: 10px 5px; line-height: 15px;
+  display: inline;
+  margin-left:3%;
+  font-family: phantasm;
+  cursor: pointer;
+}
+.menu{
+  border-style:solid;
+  border-radius:5px;
   border-color:blue;
   padding: 20px 10px; line-height: 30px;
+  background-color:black;
+  color:blue;
+  font-family: phantasm;
+  cursor: pointer;
+}
+input{
+  border-style:solid;
+  border-radius:5px;
+  border-color:rgb(78, 0, 0);
+  padding: 10px 5px; line-height: 15px;
+  color:blue;
+  background-color: black;
+  display: inline;
+  margin-left:3%;
+  font-family: phantasm;
+  cursor: pointer;
+}
+form{
+  display: inline;
 }
 #password{
   border-style:solid;
