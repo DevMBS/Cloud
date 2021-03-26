@@ -1,5 +1,4 @@
 var pFAR = "";
-//displaying the list of uploaded files
 function getFiles(){
   document.getElementById("btnGetTxt").style.display = "none";
   $.ajax({
@@ -8,16 +7,22 @@ function getFiles(){
       if(data!="" && document.getElementById("password").value == window.atob(pFAR)){
       const list = data.split(" ");
       for(i = 0; i < list.length-1; i++){
-        document.getElementById("files").innerHTML += "<a href='.uploads/"+list[i]+"' download>"+list[i]+"</a>"+"<br/><br/><br/><br/>";
+        document.getElementById("files").innerHTML += "<button class='menu' onclick='innerMenu(`"+list[i]+"`);'>"+list[i]+"</button><span id='span"+list[i]+"'></span>"+"<br/><br/><br/><br/>";
       }
       }
       else{
         document.getElementById("files").innerHTML = "No files :("
       }
+      
     }
   });
 }
-//checking password
+function innerMenu(list){
+
+  document.getElementById('span'+list).innerHTML = "<a href='.uploads/"+list+"' download>DOWNLOAD FILE</a><form action='/delete' method='post' enctype='multipart/form-data'><input type='text' name='delete' id='file' value='"+list+"' style='display:none;'/><input type='submit' value='DELETE FILE' /></form>";
+
+
+}
 function checkUser(){
   $.ajax({
     url:'peofjpienrofiu34785y389470r9123-8jfun4un0u8h349fh098hq0uj0iweufn0ui0F7Q04UFJ0EJ-F9H0.sspfmbsc',
