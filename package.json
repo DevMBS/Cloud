@@ -1,7 +1,7 @@
 {
   "name": "devmbs_cloud",
-  "version": "0.0.1",
-  "description": "My Simple Cloud",
+  "version": "0.1.1",
+  "description": "Node JS Cloud",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -22,7 +22,7 @@
   "keywords": [
     "node",
     "multer",
-    "filetransfer",
+    "cloud",
     "express"
   ]
 }
