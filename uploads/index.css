@@ -136,3 +136,35 @@ form{
     transform: scale(0.8) rotate(45deg);
     color: red;
 }
+video{
+  width: 30%;
+  height: 25%;
+}
+audio{
+  width: 30%;
+  height: 25%;
+}
+img{
+  width: 30%;
+  height: 25%;
+}
+.openFile{
+  border-style:solid;
+  border-radius:5px;
+  border-color:rgb(9, 255, 70);
+  padding: 10px 5px; line-height: 15px;
+  color:aqua;
+  background-color: black;
+  display: inline;
+  margin-left:3%;
+  font-family: phantasm;
+  cursor: pointer;
+}
+.openFile:hover{
+  transform: scale(0.98);
+}
+.txt{
+  background-color: white;
+  color:black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
