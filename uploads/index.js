@@ -25,7 +25,7 @@ function innerMenu(list){
 }
 function openfile(file){
   const extension = file.split(".")[1];
-  switch(extension){
+  switch(extension.toLowerCase()){
     case "txt":
       $.ajax({
         url:'.uploads/'+file,
