@@ -61,17 +61,25 @@ function openfile(file){
     
   }
 }
+window.onload = function(){
+  if(localStorage.getItem("access") != undefined){
+    checkUser();
+  }
+}
 function checkUser(){
   $.ajax({
     url:'peofjpienrofiu34785y389470r9123-8jfun4un0u8h349fh098hq0uj0iweufn0ui0F7Q04UFJ0EJ-F9H0.sspfmbsc',
     success: function (data){
       pFAR = data;
-      if(document.getElementById("password").value == window.atob(data)){
+      if(document.getElementById("password").value == window.atob(data) || localStorage.getItem("access") == window.atob(data)){
+        if(localStorage.getItem("access") == undefined){
+          localStorage.setItem("access", document.getElementById("password").value);
+        }
         document.getElementById("uploads").innerHTML = '<button  type="button" id="btnGetTxt" onclick="getFiles()">See list of files</button><div id="open"></div><div id="files"></div>';
         document.getElementById("passinput").style.display="none";
       }
       else{
-        document.getElementById("uploads").innerHTML = "Access denied: wrong password";
+        document.getElementById("ok").innerHTML = "<br/><br/>Access denied: wrong password";
       }
     }
   });
