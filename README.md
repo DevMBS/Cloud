@@ -14,4 +14,4 @@ This cloud is password protected (password - password12345), so you can change i
 
 
 
-P.S. Mobile adaptation coming soon!
+P.S. Mobile adaptation and white theme coming soon!
